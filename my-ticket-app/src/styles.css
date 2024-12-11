@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-between; /* Aligns children (ticket configuration and status box) to the left and right */
+  padding: 20px;
+  height: 100vh; /* Ensure the body takes full height of the viewport */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+form label {
+  margin-bottom: 1em;
+}
+
+form input {
+  padding: 0.5em;
+  margin-top: 0.5em;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style for the left configuration box (Ticket Configuration Information) */
+.info-box {
+  background-color: #f9f9f9;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 45%; /* Takes up 45% of the page width */
+  height: 500px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* Buttons container centered below the form */
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.status-container {
+  width: 80%; /* Takes up 45% of the page width */
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  flex-shrink: 0;
+}
+
+.status-box {
+  background-color: #fff;
+  width: 80%;
+  height: 60%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.p{
+  text-align: center;
+}
+
+/* Button hover effect */
+.buttons button:hover {
+  background-color: #0056b3;
+}
